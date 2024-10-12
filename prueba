@@ -1,19 +1,23 @@
-Definir num1, num2 resultado Como Entero
+Definir calificacion1,calificacion2,calificacion3, promedio Como Real
 	
-	Escribir " ingrese el primer numero"
-	Leer num1
-	Escribir " ingrese el segundo numero"
-	Leer num2
+	Escribir "ingrese la primera nota"
+	Leer calificacion1
+	Escribir "ingrese la segunda nota"
+	Leer calificacion2
+	Escribir "ingrese la tercera nota"
+	Leer calificacion3
 	
-	resultado = num1 + num2
+	promedio = (calificacion1+calificacion2+calificacion3) /3
 	
-	Escribir "resultado es." resultado
-	** Ejecución Iniciada. ***
- ingrese el primer numero
-> 29
- ingrese el segundo numero
-> 48
-resultado es.77
-*** Ejecución Finalizada. ***
+	Escribir "El promedio de sus 3 notas es :", promedio 
+
+*** Ejecución Iniciada. ***
+ingrese la primera nota
+> 8
+ingrese la segunda nota
+> 6
+ingrese la tercera nota
+> 10
+El promedio de sus 3 notas es :8
 
 FinAlgoritmo
