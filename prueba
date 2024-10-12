@@ -1,23 +1,30 @@
-Definir calificacion1,calificacion2,calificacion3, promedio Como Real
+Definir tem1,tem2,tem3,tem4,tem5, promedio Como Real
 	
-	Escribir "ingrese la primera nota"
-	Leer calificacion1
-	Escribir "ingrese la segunda nota"
-	Leer calificacion2
-	Escribir "ingrese la tercera nota"
-	Leer calificacion3
+	Escribir "ingrese la primer temperatura"
+	Leer tem1
+	Escribir "ingrese la segunda temperatura"
+	Leer tem2
+	Escribir "inrese la tercera temperatura"
+	leer tem3
+	Escribir "ingrese la cuarta temperatura"
+	Leer tem4
+	Escribir "ingrese la quinta temperatura"
+	Leer tem5
 	
-	promedio = (calificacion1+calificacion2+calificacion3) /3
+	promedio = (tem1 + tem2 + tem3 + tem4 + tem5)/5
 	
-	Escribir "El promedio de sus 3 notas es :", promedio 
+	Escribir " promedio de las cuatros temperatura es:", promedio
 
-*** Ejecución Iniciada. ***
-ingrese la primera nota
-> 8
-ingrese la segunda nota
-> 6
-ingrese la tercera nota
-> 10
-El promedio de sus 3 notas es :8
+ingrese la primer temperatura
+> 35
+ingrese la segunda temperatura
+> 16
+inrese la tercera temperatura
+> 4
+ingrese la cuarta temperatura
+> 18
+ingrese la quinta temperatura
+> 31
+ promedio de las cuatros temperatura es:20.8
 
 FinAlgoritmo
