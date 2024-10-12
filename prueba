@@ -1,30 +1,19 @@
-Definir tem1,tem2,tem3,tem4,tem5, promedio Como Real
+Definir num1,num2, aux Como Real
 	
-	Escribir "ingrese la primer temperatura"
-	Leer tem1
-	Escribir "ingrese la segunda temperatura"
-	Leer tem2
-	Escribir "inrese la tercera temperatura"
-	leer tem3
-	Escribir "ingrese la cuarta temperatura"
-	Leer tem4
-	Escribir "ingrese la quinta temperatura"
-	Leer tem5
+	num1=35
+	num2= 28
 	
-	promedio = (tem1 + tem2 + tem3 + tem4 + tem5)/5
+	Escribir "el valor del primer numero es", num1
+	Escribir "el valor del segundo numero es", num2
 	
-	Escribir " promedio de las cuatros temperatura es:", promedio
+	aux = num1 // aux = 35
+	num1= num2 // num1 = 28
+	num2 = aux // num2 = 35
+	
+	Escribir " el valor del primer numero despues del intercambio es ", num1
+	Escribir " el valor del segundo numero despues del inercambio es" , num2 
 
-ingrese la primer temperatura
-> 35
-ingrese la segunda temperatura
-> 16
-inrese la tercera temperatura
-> 4
-ingrese la cuarta temperatura
-> 18
-ingrese la quinta temperatura
-> 31
- promedio de las cuatros temperatura es:20.8
-
-FinAlgoritmo
+el valor del primer numero es35
+el valor del segundo numero es28
+ el valor del primer numero despues del intercambio es 28
+ el valor del segundo numero despues del inercambio es35
