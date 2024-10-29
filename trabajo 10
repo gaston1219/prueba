@@ -1,0 +1,33 @@
+	dimension matriz[4, 4] 
+	Definir fila, columna Como Entero
+	Definir esta Como Logico
+	
+	Para f=1 Hasta 3 Con Paso 1 Hacer
+		Para c=1 hasta 3 Con Paso 1 Hacer
+			Escribir ("ingrese la fruta ")
+			Leer matriz[f, c]
+		FinPara
+	FinPara
+	
+	Escribir ("ingrese la fruta que quiere buscar")
+	Leer fruta
+	esta = Falso
+	
+	Para f=1 Hasta 3 Con Paso 1 Hacer
+		Para c=1 hasta 3 Con Paso 1 hacer
+			
+			si (matriz[f, c]  ==  fruta) Entonces
+				fila= f
+				columna= c
+				esta = Verdadero
+			FinSi
+		FinPara
+	FinPara
+	
+	si (esta == Verdadero) Entonces
+		Escribir " escontramos la fruta, esta en la posicion"
+		Escribir "fila" fila
+		Escribir "columna" columna
+	sino
+		Escribir "no encontramos la fruta que desea buscar"
+	FinSi
