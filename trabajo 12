@@ -1,0 +1,12 @@
+	// solicitar al usuario que ingrese su nombre y su altura
+	//  y Mostrar en pantalla un saludo incluya esta informacion
+	
+	Definir nombre Como Caracter
+	Definir altura Como Real
+	
+	Escribir "ingrese su nombre"
+	Leer nombre
+	Escribir "ingrese su altura"
+	Leer altura
+	
+	Escribir "hola" nombre  " tu altura es: " altura
