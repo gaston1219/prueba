@@ -1,0 +1,45 @@
+Definir tipoLibro Como Entero
+    Definir costoTotal Como Real
+	
+    // Precios fijos de los libros
+    Definir precioNovelas Como Real
+    Definir precioLibrosTexto Como Real
+    Definir precioRevistas Como Real
+	
+    precioNovelas = 10.0   // Precio de novelas
+    precioLibrosTexto = 15.0 // Precio de libros de texto
+    precioRevistas = 5.0    // Precio de revistas
+	
+    // Solicitar al usuario el tipo de libro
+    Escribir "Ingrese el tipo de libro (1: Novelas, 2: Libros de texto, 3: Revistas, 4: Novelas y libros de texto, 5: Todos, 6: Novelas y revistas, 7: Libros de texto y revistas):"
+    Leer tipoLibro
+	
+    // Inicializar costo total
+    costoTotal = 0.0
+	
+    // Calcular el costo total según el tipo de libro
+    Segun tipoLibro Hacer
+        1:
+            costoTotal = precioNovelas
+            Escribir "Costo total: ", costoTotal
+        2:
+            costoTotal = precioLibrosTexto
+            Escribir "Costo total: ", costoTotal
+        3:
+            costoTotal = precioRevistas
+            Escribir "Costo total: ", costoTotal
+        4:
+            costoTotal = precioNovelas + precioLibrosTexto
+            Escribir "Costo total: ", costoTotal
+        5:
+            costoTotal = precioNovelas + precioLibrosTexto + precioRevistas
+            Escribir "Costo total: ", costoTotal
+        6:
+            costoTotal = precioNovelas + precioRevistas
+            Escribir "Costo total: ", costoTotal
+        7:
+            costoTotal = precioLibrosTexto + precioRevistas
+            Escribir "Costo total: ", costoTotal
+        De Otro Modo:
+            Escribir "Tipo de libro no válido. Por favor, ingrese un número del 1 al 7."
+    Fin Segun
