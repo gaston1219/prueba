@@ -1,0 +1,16 @@
+Definir tarifaPorHora Como Real
+    Definir horasTrabajadas Como Entero
+    Definir ingresoMensual Como Real
+	
+    // Solicitar la tarifa por hora y la cantidad de horas trabajadas
+    Escribir "Ingrese la tarifa por hora:"
+    Leer tarifaPorHora
+    Escribir "Ingrese la cantidad de horas trabajadas en el mes:"
+    Leer horasTrabajadas
+	
+    // Calcular el ingreso mensual
+    ingresoMensual = tarifaPorHora * horasTrabajadas
+	
+    // Mostrar el resultado
+    Escribir "El ingreso mensual del freelancer es de ", ingresoMensual
+FinAlgoritmo
