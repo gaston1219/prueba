@@ -1,0 +1,21 @@
+Definir numParticipantes Como Entero
+    Definir tiempo, menorTiempo Como Real
+    Definir mejorParticipante Como Entero
+	
+    // Inicializar variables
+    menorTiempo = 9999  // Un valor alto para iniciar la comparación
+	
+    // Ciclo para ingresar los tiempos de los 10 participantes
+    Para numParticipantes Desde 1 Hasta 10 Hacer
+        Escribir "Ingrese el tiempo del participante ", numParticipantes, " (en minutos):"
+        Leer tiempo
+        
+        // Verificar si el tiempo ingresado es el menor
+        Si tiempo < menorTiempo Entonces
+            menorTiempo = tiempo
+            mejorParticipante = numParticipantes
+        Fin Si
+    Fin Para
+	
+    // Mostrar el resultado
+    Escribir "El participante ", mejorParticipante, " tuvo el menor tiempo de respuesta: ", menorTiempo, " minutos."
