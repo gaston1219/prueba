@@ -1,0 +1,15 @@
+	Definir numero Como Entero
+    Definir suma Como Entero
+    suma <- 0
+	
+    // Bucle para ingresar números
+    Repetir
+        Escribir "Ingrese un número:"
+        Leer numero
+        
+        // Sumar el número ingresado
+        suma <- suma + numero
+    Hasta Que numero >= 10 Y numero <= 99
+	
+    // Mostrar la suma
+    Escribir "La suma de todos los números ingresados es: ", suma
