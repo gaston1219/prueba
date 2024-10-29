@@ -1,0 +1,13 @@
+Definir ancho, largo, perimetro Como Real
+	
+    // Solicitar el ancho y largo del rectángulo
+    Escribir "Ingrese el ancho del rectángulo:"
+    Leer ancho
+    Escribir "Ingrese el largo del rectángulo:"
+    Leer largo
+	
+    // Calcular el perímetro
+    perimetro = 2 * (ancho + largo)
+	
+    // Mostrar el resultado
+    Escribir "El perímetro del rectángulo es ", perimetro
