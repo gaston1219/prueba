@@ -1,0 +1,47 @@
+Definir cantidad Como Real
+    Definir unidadOrigen, unidadDestino Como Caracter
+    Definir resultado Como Real
+    Definir i Como Entero
+	
+    Para i Desde 1 Hasta 6 Hacer
+        Escribir "Ingrese la cantidad a convertir: "
+        Leer cantidad
+        Escribir "Ingrese la unidad de origen (m, km, kg, g, C, F): "
+        Leer unidadOrigen
+        Escribir "Ingrese la unidad de destino (m, km, kg, g, C, F): "
+        Leer unidadDestino
+		
+        // Conversión de Longitud
+        Si unidadOrigen = "m" Y unidadDestino = "km" Entonces
+            resultado = cantidad / 1000
+            Escribir cantidad, " metros son ", resultado, " kilómetros."
+        Sino
+            Si unidadOrigen = "km" Y unidadDestino = "m" Entonces
+                resultado = cantidad * 1000
+                Escribir cantidad, " kilómetros son ", resultado, " metros."
+            FinSi
+        FinSi
+		
+        // Conversión de Peso
+        Si unidadOrigen = "kg" Y unidadDestino = "g" Entonces
+            resultado = cantidad * 1000
+            Escribir cantidad, " kilogramos son ", resultado, " gramos."
+        Sino
+            Si unidadOrigen = "g" Y unidadDestino = "kg" Entonces
+                resultado = cantidad / 1000
+                Escribir cantidad, " gramos son ", resultado, " kilogramos."
+            FinSi
+        FinSi
+		
+        // Conversión de Temperatura
+        Si unidadOrigen = "C" Y unidadDestino = "F" Entonces
+            resultado = (cantidad * 9 / 5) + 32
+            Escribir cantidad, " grados Celsius son ", resultado, " grados Fahrenheit."
+        Sino
+            Si unidadOrigen = "F" Y unidadDestino = "C" Entonces
+                resultado = (cantidad - 32) * 5 / 9
+                Escribir cantidad, " grados Fahrenheit son ", resultado, " grados Celsius."
+            FinSi
+        FinSi
+		
+    Fin Para
