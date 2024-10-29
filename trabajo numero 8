@@ -1,1 +1,24 @@
-
+Dimension numeros[6]
+    Definir menor Como Entero
+    Definir posicion Como Entero
+	
+    // Ingreso de datos
+    Para i Desde 1 Hasta 6 Hacer
+        Escribir "Ingrese el número ", i , ":"
+        Leer numeros[i]
+    Fin Para
+	
+    // Inicializar el menor con el primer elemento del vector
+    menor = numeros[1]
+    posicion = 1
+	
+    // Buscar el número menor y su posición
+    Para i Desde 2 Hasta 6 Hacer
+        Si numeros[i] < menor Entonces
+            menor = numeros[i]
+            posicion = i
+        Fin Si
+    Fin Para
+	
+    // Mostrar el resultado
+    Escribir "El número menor es ", menor, " y se encuentra en la posición ", posicion
