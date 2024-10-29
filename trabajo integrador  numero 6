@@ -1,0 +1,14 @@
+Definir limite Como Entero
+    Definir i Como Entero
+	
+    // Solicitar al usuario el límite
+    Escribir "Ingrese un número límite:"
+    Leer limite
+	
+    // Bucle para contar y mostrar números pares
+    Escribir "Los números pares desde 1 hasta ", limite, " son:"
+    Para i Desde 1 Hasta limite Hacer
+        Si i Mod 2 = 0 Entonces
+            Escribir i
+        Fin Si
+    Fin Para
