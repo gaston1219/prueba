@@ -1,0 +1,28 @@
+Dimension valores[6] 
+    Definir positivos, negativos Como Entero
+    Definir i Como Entero
+	
+    // Inicializar contadores
+    positivos = 0
+    negativos = 0
+	
+    // Ingreso de números en el arreglo
+    Para i Desde 1 Hasta 6 Hacer
+        Escribir "Ingrese el número ", i, ":"
+        Leer valores[i]
+    Fin Para
+	
+    // Contar positivos y negativos
+    Para i Desde 1 Hasta 6 Hacer
+        Si valores[i] > 0 Entonces
+            positivos = positivos + 1
+        Sino
+            Si valores[i] < 0 Entonces
+                negativos = negativos + 1
+            Fin Si
+        Fin Si
+    Fin Para
+	
+    // Mostrar resultados
+    Escribir "Total de números positivos: ", positivos
+    Escribir "Total de números negativos: ", negativos
