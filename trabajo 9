@@ -1,0 +1,23 @@
+dimension matriz[6,6] 
+    Definir f, c Como Entero
+	
+    // Inicializar la matriz con ceros
+    Para f Desde 1 Hasta 6 Hacer
+        Para c Desde 1 Hasta 6 Hacer
+            matriz[f,c] =  0
+        Fin Para
+    Fin Para
+	
+    // Colocar unos en la diagonal secundaria
+    Para c Desde 1 Hasta 6 Hacer
+        matriz[c, 7 - c] = 1
+    Fin Para
+	
+    // Mostrar la matriz
+    Escribir "Matriz resultante:"
+    Para f Desde 1 Hasta 6 Hacer
+        Para c Desde 1 Hasta 6 Hacer
+            Escribir Sin Saltar matriz[f,c], " "
+        Fin Para
+        Escribir ("") // Salto de línea después de cada fila
+    Fin Para
