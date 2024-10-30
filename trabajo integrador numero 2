@@ -1,0 +1,14 @@
+Dimension vector[5] 
+    Definir i Como Entero
+	
+    // Cargar valores en el vector
+    Para i Desde 1 Hasta 5 Hacer
+        Escribir "Ingresa el valor para la posición ", i, ":"
+        Leer vector[i]
+    Fin Para
+	
+    // Mostrar los valores del vector
+    Escribir "Los valores ingresados son:"
+    Para i Desde 1 Hasta 5 Hacer
+        Escribir "Posición ", i, ": ", vector[i]
+    Fin Para
